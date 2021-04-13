@@ -10,7 +10,7 @@ In this project, we implement the two-stream action recognition system on FPGA. 
 | Ours | 86% | 4.12 | 22.3 | ResNet18 |
 
 ## System Overview
-![](https://i.imgur.com/BMqebcv.gif)
+![](system_overview.gif)
 
 ## Quick Run
 We provide the pre-build bitstream and pre-trained model for quick demo. Please refer to [zcu102_demo](https://github.com/NetDBFPGA/ecv2021_demo/tree/master/zcu102_demo)
