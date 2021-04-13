@@ -9,11 +9,11 @@
 We implement the two-stream action recognition system on FPGA. Our implementation can achieve near real-time requirement (10~15 FPS) with competiable accuracy compare to current-state-of-the-art implementations (on UCF101 and backbone model is ResNet18).
 
 | Architecture | Accuracy    | GOPs | Size(MB) | Backbone |
-| -----------  | ----------- | ----
+| -----------  | ----------- | ---- | -------- | -------- |
 | F-C3D       |  79%  | 76 | 321 | C3D |
 | F-E3D       |  85%  | 12.2 | 8.6 | E3DNet |
 | Sun et al.  | 88% | 26.13 | 126 | (2+1)D |
-| ------    |  -----  | ----- | ----- |
+| ------    |  -----  | ----- | ----- | -------- |
 | Ours | 86% | 4.12 | 22.3 | ResNet18 |
 ## System Flow
 ![](https://i.imgur.com/BMqebcv.gif)
