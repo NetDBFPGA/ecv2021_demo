@@ -7,6 +7,7 @@
 ![](https://img.shields.io/static/v1?label=shell&message=bash/zsh&color=green)
 
 We implement the two-stream action recognition system on FPGA. Our implementation can achieve near real-time requirement (10~15 FPS) with competiable accuracy compare to current-state-of-the-art implementations (on UCF101 and backbone model is ResNet18).
+
 | Architecture | Accuracy    | GOPs | Size(MB) | Backbone |
 | -----------  | ----------- | ----
 | F-C3D       |  79%  | 76 | 321 | C3D |
