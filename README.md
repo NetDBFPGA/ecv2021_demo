@@ -1,12 +1,6 @@
 # Two-stream Action Recognition SOC 🎬
-###### tags: `ntu` `netdb`
-![](https://img.shields.io/static/v1?label=Zynq_UltraScale+&message=zcu102&color=purple)
-![](https://img.shields.io/static/v1?label=Board_OS&message=pynq&color=red)
-![](https://img.shields.io/static/v1?label=Vivado&message=2020.1&color=orange)
-![](https://img.shields.io/static/v1?label=python&message=3.6&color=blue)
-![](https://img.shields.io/static/v1?label=shell&message=bash/zsh&color=green)
 
-We implement the two-stream action recognition system on FPGA. Our implementation can achieve near real-time requirement (10~15 FPS) with competiable accuracy compare to current state-of-the-art implementations (on UCF101 and backbone model is ResNet18).
+In this project, we implement the two-stream action recognition system on FPGA. Our implementation can achieve near real-time requirement (10~15 FPS) with competiable accuracy compare to current state-of-the-art implementations (on UCF101 and backbone model is ResNet18).
 
 | Architecture | Accuracy    | GOPs | Size(MB) | Backbone |
 | -----------  | ----------- | ---- | -------- | -------- |
