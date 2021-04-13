@@ -10,11 +10,12 @@ We implement the two-stream action recognition system on FPGA. Our implementatio
 
 | Architecture | Accuracy    | GOPs | Size(MB) | Backbone |
 | -----------  | ----------- | ---- | -------- | -------- |
-| F-C3D       |  79%  | 76 | 321 | C3D |
-| F-E3D       |  85%  | 12.2 | 8.6 | E3DNet |
-| Sun et al.  | 88% | 26.13 | 126 | (2+1)D |
+| F-C3D[1]       |  79%  | 76 | 321 | C3D |
+| F-E3D[2]       |  85%  | 12.2 | 8.6 | E3DNet |
+| Sun et al.[3]  | 88% | 26.13 | 126 | (2+1)D |
 | Ours | 86% | 4.12 | 22.3 | ResNet18 |
-## System Flow
+
+## System Overview
 ![](https://i.imgur.com/BMqebcv.gif)
 
 ## Quick Run
@@ -37,3 +38,7 @@ We provide the pre-build bitstream and pre-trained model for quick demo. Please 
 > make hls
 ```
 
+## References
+* [1] H. Fan, X. Niu, Q. Liu, and W. Luk. F-c3d: Fpga-based 3-dimensional convolutional neural network. IEEE FPL 2017
+* [2] H. Fan, C. Luo, C. Zeng, M. Ferianc, Z. Que, S. Liu, X. Niu, and W. Luk. F-e3d: Fpga-based acceleration of an efficient 3d convolutional neural network for human action recognition. IEEE ASAP 2019
+* [3] M. Sun, P. Zhao, M. Gungor, M. Pedram, M. Leeser, and X. Lin. 3d cnn acceleration on fpga using hardware-aware pruning. ACM DAC 2020.
