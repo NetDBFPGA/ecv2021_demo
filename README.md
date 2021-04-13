@@ -1,6 +1,6 @@
 # Two-stream Action Recognition SOC 🎬
 
-In this project, we implement the two-stream action recognition system on FPGA. Our model our model has around 10 times less operations than other C3D-based FPGA systems and can achieve near real-time requirement (10~15 FPS) while keeping similar accuracy (on UCF101 and backbone model is ResNet18).
+In this project, we implement the two-stream action recognition system on FPGA. Our model has around 10 times less operations than other C3D-based FPGA systems and can achieve near real-time requirement (10~15 FPS) while keeping similar accuracy (on UCF101 and backbone model is ResNet18).
 
 | Architecture | Accuracy    | GOPs | Size(MB) | Backbone |
 | -----------  | ----------- | ---- | -------- | -------- |
