@@ -18,5 +18,5 @@ config_export -format ip_catalog -rtl verilog
 #csim_design
 csynth_design
 #cosim_design
-export_design -rtl verilog -format ip_catalog
+export_design -rtl verilog -format ip_catalog -version 0.0.1
 exit

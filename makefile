@@ -6,8 +6,9 @@ PART=large #medium
 main: hls bitstream
 
 hls:
-	#source scripts/hls_lk.sh ${PART}
+	source scripts/hls_lk.sh ${PART}
 	source scripts/hls_cnn.sh NLR_Quantize_3 ${PART}
+	mv HLS_lk LK_optical_flow/
 
 bitstream:
 	rm -rf vivado design_1.bit design_1.hwh
@@ -17,4 +18,6 @@ bitstream:
 	cp vivado/vivado.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh design_1.hwh
 
 clean:
-	echo "test"
+	rm -rf LK_optical_flow/HLS_lk
+	rm -rf NLR_Quantize_3/HLS_PROJ
+	rm -rf vivado*

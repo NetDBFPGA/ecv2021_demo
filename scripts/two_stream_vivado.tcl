@@ -1,11 +1,11 @@
 #set PART $argv0 
 
 #  LK HLS implement path <<<<<<<記得改路徑>>>>>>
-set hls_lk_impl_path LK_optical_flow/lk/solution1/impl  
+set hls_lk_impl_path LK_optical_flow/HLS_lk/solution1/impl  
 # CNN HLS implement path <<<<<<<記得改路徑>>>>>>
 set hls_cnn_impl_path NLR_Quantize_3/HLS_PROJ/large/impl
 # Vivado project path <<<<<<<記得改路徑>>>>>>
-set vivado_path /media/datasets/Git/two_stream_soc/vivado 
+set vivado_path vivado
 
 # create new project
 create_project vivado ${vivado_path} -part xczu9eg-ffvb1156-2-e -force
@@ -37,7 +37,7 @@ update_ip_catalog
 
 # [block design] - DoCompute_0,DoCompute_1
 startgroup
-create_bd_cell -type ip -vlnv xilinx.com:hls:DoCompute:1.0 DoCompute_0
+create_bd_cell -type ip -vlnv xilinx.com:hls:DoCompute:0.0 DoCompute_0
 endgroup 
 copy_bd_objs /  [get_bd_cells {DoCompute_0}]
 
@@ -71,7 +71,7 @@ set_property -dict [list CONFIG.NUM_MI {5}] [get_bd_cells axi_interconnect_0]
 endgroup
 
 startgroup
-create_bd_cell -type ip -vlnv xilinx.com:hls:hls_LK:1.0 hls_LK_0
+create_bd_cell -type ip -vlnv xilinx.com:hls:hls_LK:0.0 hls_LK_0
 endgroup
 
 connect_bd_intf_net [get_bd_intf_pins hls_LK_0/s_axi_CONTROL_BUS] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M04_AXI]

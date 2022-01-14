@@ -2,8 +2,8 @@
 ## This file is generated automatically by Vivado HLS.
 ## Please DO NOT edit it.
 ## Copyright (C) 1986-2019 Xilinx, Inc. All Rights Reserved.
-######################### zcu 104 ##############################
-open_project lk
+######################### zcu 102 ##############################
+open_project HLS_lk
 set_top hls_LK
 add_files LK_optical_flow/LKof_hls_opt.cpp
 #add_files -tb LKof_main.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
@@ -19,5 +19,5 @@ config_export -format ip_catalog -rtl verilog -vivado_phys_opt place -vivado_rep
 #csim_design
 csynth_design
 #cosim_design
-export_design -format ip_catalog
+export_design -format ip_catalog -version 0.0.1
 exit

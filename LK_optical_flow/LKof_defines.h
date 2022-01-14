@@ -274,7 +274,8 @@ float compute_PSNR(unsigned short int *I1_img, unsigned short int *I2_img, unsig
 
 #include "ap_int.h"
 #include "ap_fixed.h"
-#include "hls_video.h"
+// #include "hls_video.h"
+#include "hls_stream.h" // for vivado 2020.1
 //unsigned
 struct PACK_U{
     ap_uint<8> data;

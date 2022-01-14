@@ -15,10 +15,10 @@ case $SCALE in
 	*) SCRIPT="xxx.tcl" ;;
 esac 
 
-cd LK_optical_flow/ 
+# cd LK_optical_flow/ 
 
-echo "${Cyan}vivado_hls $SCRIPT $NC"
-vivado_hls $SCRIPT 
+echo "${Cyan}vivado_hls LK_optical_flow/$SCRIPT $NC"
+vivado_hls LK_optical_flow/$SCRIPT 
 
-cd ..
+# cd ..
 
